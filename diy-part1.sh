@@ -18,7 +18,7 @@
 # echo 'src-git OAF https://github.com/destan19/OpenAppFilter' >>feeds.conf.default
 
 echo '我证明diy-part1.sh脚本已经成功运行'
-echo "src-git  https://github.com/kiddin9/openwrt-packages" >> ./feeds.conf.default
+echo "src-git Bypass https://github.com/kiddin9/openwrt-packages" >> ./feeds.conf.default
 echo 'src-git helloworld https://github.com/fw876/helloworld' >> ./feeds.conf.default
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >> ./feeds.conf.default
 echo "src-git OAF https://github.com/destan19/OpenAppFilter" >> ./feeds.conf.default

@@ -14,7 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
+echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >> ./feeds.conf.default
 # echo 'src-git OAF https://github.com/destan19/OpenAppFilter' >>feeds.conf.default
 
 echo '我证明diy-part1.sh脚本已经成功运行'

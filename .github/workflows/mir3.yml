@@ -68,10 +68,20 @@ jobs:
         chmod +x $DIY_P1_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
+        
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
+      
+    - name: DeleteWarning
+      run: sed -i 's/mosdns.*neo/mosdns/g' feeds/kenzo/luci-app-mosdns/Makefile
 
     - name: Install feeds
+      run: cd openwrt && ./scripts/feeds install -a
+      
+    - name: Update feeds again
+      run: cd openwrt && ./scripts/feeds update -a
+
+    - name: Install feeds again
       run: cd openwrt && ./scripts/feeds install -a
       
     - name: Change default Theme

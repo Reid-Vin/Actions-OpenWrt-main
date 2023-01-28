@@ -72,8 +72,8 @@ jobs:
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
       
-    - name: DeleteWarning
-      run: sed -i 's/mosdns.*neo/mosdns/g' feeds/kenzo/luci-app-mosdns/Makefile
+    # - name: DeleteWarning
+      # run: sed -i 's/mosdns.*neo/mosdns/g' feeds/kenzo/luci-app-mosdns/Makefile
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
